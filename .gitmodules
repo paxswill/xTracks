@@ -1,0 +1,6 @@
+[submodule "JSONKit"]
+	path = JSONKit
+	url = git://github.com/johnezang/JSONKit.git
+[submodule "asi-http-request"]
+	path = asi-http-request
+	url = git://github.com/pokeb/asi-http-request.git
