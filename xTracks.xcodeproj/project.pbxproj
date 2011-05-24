@@ -18,6 +18,7 @@
 		B1391CDB138B410200DAC9D1 /* xTracksTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B1391CDA138B410200DAC9D1 /* xTracksTests.h */; };
 		B1391CDD138B410200DAC9D1 /* xTracksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CDC138B410200DAC9D1 /* xTracksTests.m */; };
 		B1391CE8138B429800DAC9D1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CE7138B429800DAC9D1 /* JSONKit.m */; };
+		B1391CEB138B42D200DAC9D1 /* PX8tracksAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CEA138B42D200DAC9D1 /* PX8tracksAccess.m */; };
 		B1391D02138B441500DAC9D1 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CF1138B441500DAC9D1 /* ASIDataCompressor.m */; };
 		B1391D03138B441500DAC9D1 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CF3138B441500DAC9D1 /* ASIDataDecompressor.m */; };
 		B1391D04138B441500DAC9D1 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CF5138B441500DAC9D1 /* ASIDownloadCache.m */; };
@@ -62,6 +63,8 @@
 		B1391CDC138B410200DAC9D1 /* xTracksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xTracksTests.m; sourceTree = "<group>"; };
 		B1391CE6138B429800DAC9D1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
 		B1391CE7138B429800DAC9D1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+		B1391CE9138B42D200DAC9D1 /* PX8tracksAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PX8tracksAccess.h; sourceTree = "<group>"; };
+		B1391CEA138B42D200DAC9D1 /* PX8tracksAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksAccess.m; sourceTree = "<group>"; };
 		B1391CEF138B441500DAC9D1 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = SOURCE_ROOT; };
 		B1391CF0138B441500DAC9D1 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = "asi-http-request/Classes/ASIDataCompressor.h"; sourceTree = SOURCE_ROOT; };
 		B1391CF1138B441500DAC9D1 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = "asi-http-request/Classes/ASIDataCompressor.m"; sourceTree = SOURCE_ROOT; };
@@ -154,6 +157,8 @@
 		B1391CB8138B410200DAC9D1 /* xTracks */ = {
 			isa = PBXGroup;
 			children = (
+				B1391CE9138B42D200DAC9D1 /* PX8tracksAccess.h */,
+				B1391CEA138B42D200DAC9D1 /* PX8tracksAccess.m */,
 				B1391CC4138B410200DAC9D1 /* xTracksAppDelegate.h */,
 				B1391CC5138B410200DAC9D1 /* xTracksAppDelegate.m */,
 				B1391CC7138B410200DAC9D1 /* MainMenu.xib */,
@@ -341,6 +346,7 @@
 				B1391CC0138B410200DAC9D1 /* main.m in Sources */,
 				B1391CC6138B410200DAC9D1 /* xTracksAppDelegate.m in Sources */,
 				B1391CE8138B429800DAC9D1 /* JSONKit.m in Sources */,
+				B1391CEB138B42D200DAC9D1 /* PX8tracksAccess.m in Sources */,
 				B1391D02138B441500DAC9D1 /* ASIDataCompressor.m in Sources */,
 				B1391D03138B441500DAC9D1 /* ASIDataDecompressor.m in Sources */,
 				B1391D04138B441500DAC9D1 /* ASIDownloadCache.m in Sources */,
