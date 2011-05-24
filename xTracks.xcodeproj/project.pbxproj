@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1391CB3138B410200DAC9D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1391CB2138B410200DAC9D1 /* Cocoa.framework */; };
+		B1391CBD138B410200DAC9D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1391CBB138B410200DAC9D1 /* InfoPlist.strings */; };
+		B1391CC0138B410200DAC9D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CBF138B410200DAC9D1 /* main.m */; };
+		B1391CC3138B410200DAC9D1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B1391CC1138B410200DAC9D1 /* Credits.rtf */; };
+		B1391CC6138B410200DAC9D1 /* xTracksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CC5138B410200DAC9D1 /* xTracksAppDelegate.m */; };
+		B1391CC9138B410200DAC9D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1391CC7138B410200DAC9D1 /* MainMenu.xib */; };
+		B1391CD0138B410200DAC9D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1391CB2138B410200DAC9D1 /* Cocoa.framework */; };
+		B1391CD8138B410200DAC9D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1391CD6138B410200DAC9D1 /* InfoPlist.strings */; };
+		B1391CDB138B410200DAC9D1 /* xTracksTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B1391CDA138B410200DAC9D1 /* xTracksTests.h */; };
+		B1391CDD138B410200DAC9D1 /* xTracksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391CDC138B410200DAC9D1 /* xTracksTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1391CD1138B410200DAC9D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1391CA5138B410200DAC9D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1391CAD138B410200DAC9D1;
+			remoteInfo = xTracks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1391CAE138B410200DAC9D1 /* xTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1391CB2138B410200DAC9D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B1391CB5138B410200DAC9D1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B1391CB6138B410200DAC9D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B1391CB7138B410200DAC9D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1391CBA138B410200DAC9D1 /* xTracks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xTracks-Info.plist"; sourceTree = "<group>"; };
+		B1391CBC138B410200DAC9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1391CBE138B410200DAC9D1 /* xTracks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xTracks-Prefix.pch"; sourceTree = "<group>"; };
+		B1391CBF138B410200DAC9D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1391CC2138B410200DAC9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B1391CC4138B410200DAC9D1 /* xTracksAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xTracksAppDelegate.h; sourceTree = "<group>"; };
+		B1391CC5138B410200DAC9D1 /* xTracksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xTracksAppDelegate.m; sourceTree = "<group>"; };
+		B1391CC8138B410200DAC9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B1391CCF138B410200DAC9D1 /* xTracksTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xTracksTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1391CD5138B410200DAC9D1 /* xTracksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xTracksTests-Info.plist"; sourceTree = "<group>"; };
+		B1391CD7138B410200DAC9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1391CD9138B410200DAC9D1 /* xTracksTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xTracksTests-Prefix.pch"; sourceTree = "<group>"; };
+		B1391CDA138B410200DAC9D1 /* xTracksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xTracksTests.h; sourceTree = "<group>"; };
+		B1391CDC138B410200DAC9D1 /* xTracksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xTracksTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1391CAB138B410200DAC9D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CB3138B410200DAC9D1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1391CCB138B410200DAC9D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CD0138B410200DAC9D1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1391CA3138B410200DAC9D1 = {
+			isa = PBXGroup;
+			children = (
+				B1391CB8138B410200DAC9D1 /* xTracks */,
+				B1391CD3138B410200DAC9D1 /* xTracksTests */,
+				B1391CB1138B410200DAC9D1 /* Frameworks */,
+				B1391CAF138B410200DAC9D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1391CAF138B410200DAC9D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CAE138B410200DAC9D1 /* xTracks.app */,
+				B1391CCF138B410200DAC9D1 /* xTracksTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1391CB1138B410200DAC9D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CB2138B410200DAC9D1 /* Cocoa.framework */,
+				B1391CB4138B410200DAC9D1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1391CB4138B410200DAC9D1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CB5138B410200DAC9D1 /* AppKit.framework */,
+				B1391CB6138B410200DAC9D1 /* CoreData.framework */,
+				B1391CB7138B410200DAC9D1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B1391CB8138B410200DAC9D1 /* xTracks */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CC4138B410200DAC9D1 /* xTracksAppDelegate.h */,
+				B1391CC5138B410200DAC9D1 /* xTracksAppDelegate.m */,
+				B1391CC7138B410200DAC9D1 /* MainMenu.xib */,
+				B1391CB9138B410200DAC9D1 /* Supporting Files */,
+			);
+			path = xTracks;
+			sourceTree = "<group>";
+		};
+		B1391CB9138B410200DAC9D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CBA138B410200DAC9D1 /* xTracks-Info.plist */,
+				B1391CBB138B410200DAC9D1 /* InfoPlist.strings */,
+				B1391CBE138B410200DAC9D1 /* xTracks-Prefix.pch */,
+				B1391CBF138B410200DAC9D1 /* main.m */,
+				B1391CC1138B410200DAC9D1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1391CD3138B410200DAC9D1 /* xTracksTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CDA138B410200DAC9D1 /* xTracksTests.h */,
+				B1391CDC138B410200DAC9D1 /* xTracksTests.m */,
+				B1391CD4138B410200DAC9D1 /* Supporting Files */,
+			);
+			path = xTracksTests;
+			sourceTree = "<group>";
+		};
+		B1391CD4138B410200DAC9D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1391CD5138B410200DAC9D1 /* xTracksTests-Info.plist */,
+				B1391CD6138B410200DAC9D1 /* InfoPlist.strings */,
+				B1391CD9138B410200DAC9D1 /* xTracksTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1391CAD138B410200DAC9D1 /* xTracks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1391CE0138B410200DAC9D1 /* Build configuration list for PBXNativeTarget "xTracks" */;
+			buildPhases = (
+				B1391CAA138B410200DAC9D1 /* Sources */,
+				B1391CAB138B410200DAC9D1 /* Frameworks */,
+				B1391CAC138B410200DAC9D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xTracks;
+			productName = xTracks;
+			productReference = B1391CAE138B410200DAC9D1 /* xTracks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1391CCE138B410200DAC9D1 /* xTracksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1391CE3138B410200DAC9D1 /* Build configuration list for PBXNativeTarget "xTracksTests" */;
+			buildPhases = (
+				B1391CCA138B410200DAC9D1 /* Sources */,
+				B1391CCB138B410200DAC9D1 /* Frameworks */,
+				B1391CCC138B410200DAC9D1 /* Resources */,
+				B1391CCD138B410200DAC9D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1391CD2138B410200DAC9D1 /* PBXTargetDependency */,
+			);
+			name = xTracksTests;
+			productName = xTracksTests;
+			productReference = B1391CCF138B410200DAC9D1 /* xTracksTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1391CA5138B410200DAC9D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Naval Research Lab";
+			};
+			buildConfigurationList = B1391CA8138B410200DAC9D1 /* Build configuration list for PBXProject "xTracks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1391CA3138B410200DAC9D1;
+			productRefGroup = B1391CAF138B410200DAC9D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1391CAD138B410200DAC9D1 /* xTracks */,
+				B1391CCE138B410200DAC9D1 /* xTracksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1391CAC138B410200DAC9D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CBD138B410200DAC9D1 /* InfoPlist.strings in Resources */,
+				B1391CC3138B410200DAC9D1 /* Credits.rtf in Resources */,
+				B1391CC9138B410200DAC9D1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1391CCC138B410200DAC9D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CD8138B410200DAC9D1 /* InfoPlist.strings in Resources */,
+				B1391CDB138B410200DAC9D1 /* xTracksTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1391CCD138B410200DAC9D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1391CAA138B410200DAC9D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CC0138B410200DAC9D1 /* main.m in Sources */,
+				B1391CC6138B410200DAC9D1 /* xTracksAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1391CCA138B410200DAC9D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1391CDD138B410200DAC9D1 /* xTracksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1391CD2138B410200DAC9D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1391CAD138B410200DAC9D1 /* xTracks */;
+			targetProxy = B1391CD1138B410200DAC9D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1391CBB138B410200DAC9D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1391CBC138B410200DAC9D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1391CC1138B410200DAC9D1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1391CC2138B410200DAC9D1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B1391CC7138B410200DAC9D1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1391CC8138B410200DAC9D1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B1391CD6138B410200DAC9D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1391CD7138B410200DAC9D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1391CDE138B410200DAC9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B1391CDF138B410200DAC9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B1391CE1138B410200DAC9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xTracks/xTracks-Prefix.pch";
+				INFOPLIST_FILE = "xTracks/xTracks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1391CE2138B410200DAC9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xTracks/xTracks-Prefix.pch";
+				INFOPLIST_FILE = "xTracks/xTracks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1391CE4138B410200DAC9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xTracks.app/Contents/MacOS/xTracks";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xTracksTests/xTracksTests-Prefix.pch";
+				INFOPLIST_FILE = "xTracksTests/xTracksTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B1391CE5138B410200DAC9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xTracks.app/Contents/MacOS/xTracks";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xTracksTests/xTracksTests-Prefix.pch";
+				INFOPLIST_FILE = "xTracksTests/xTracksTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1391CA8138B410200DAC9D1 /* Build configuration list for PBXProject "xTracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1391CDE138B410200DAC9D1 /* Debug */,
+				B1391CDF138B410200DAC9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1391CE0138B410200DAC9D1 /* Build configuration list for PBXNativeTarget "xTracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1391CE1138B410200DAC9D1 /* Debug */,
+				B1391CE2138B410200DAC9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1391CE3138B410200DAC9D1 /* Build configuration list for PBXNativeTarget "xTracksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1391CE4138B410200DAC9D1 /* Debug */,
+				B1391CE5138B410200DAC9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1391CA5138B410200DAC9D1 /* Project object */;
+}
