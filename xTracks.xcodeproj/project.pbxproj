@@ -29,6 +29,7 @@
 		B1391D0B138B446400DAC9D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1391D0A138B446400DAC9D1 /* SystemConfiguration.framework */; };
 		B1391D0D138B447A00DAC9D1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1391D0C138B447A00DAC9D1 /* libz.dylib */; };
 		B1391D0F138B448700DAC9D1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1391D0E138B448700DAC9D1 /* CoreServices.framework */; };
+		B1391D12138B478A00DAC9D1 /* PX8tracksResults.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D11138B478A00DAC9D1 /* PX8tracksResults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		B1391D0A138B446400DAC9D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B1391D0C138B447A00DAC9D1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B1391D0E138B448700DAC9D1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		B1391D10138B478A00DAC9D1 /* PX8tracksResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PX8tracksResults.h; sourceTree = "<group>"; };
+		B1391D11138B478A00DAC9D1 /* PX8tracksResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksResults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			children = (
 				B1391CE9138B42D200DAC9D1 /* PX8tracksAccess.h */,
 				B1391CEA138B42D200DAC9D1 /* PX8tracksAccess.m */,
+				B1391D10138B478A00DAC9D1 /* PX8tracksResults.h */,
+				B1391D11138B478A00DAC9D1 /* PX8tracksResults.m */,
 				B1391CC4138B410200DAC9D1 /* xTracksAppDelegate.h */,
 				B1391CC5138B410200DAC9D1 /* xTracksAppDelegate.m */,
 				B1391CC7138B410200DAC9D1 /* MainMenu.xib */,
@@ -354,6 +359,7 @@
 				B1391D06138B441500DAC9D1 /* ASIHTTPRequest.m in Sources */,
 				B1391D07138B441500DAC9D1 /* ASIInputStream.m in Sources */,
 				B1391D08138B441500DAC9D1 /* ASINetworkQueue.m in Sources */,
+				B1391D12138B478A00DAC9D1 /* PX8tracksResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
