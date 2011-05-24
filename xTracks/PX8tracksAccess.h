@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class PX8tracksResults;
+
 @interface PX8tracksAccess : NSObject {
 @private
     NSString *apiKey;
@@ -22,5 +24,7 @@
 
 -(id)initWithAPIKey:(NSString *)key;
 
+-(PX8tracksResults *)mixes;
+-(PX8tracksResults *)search:(NSString *)searchString;
 
 @end

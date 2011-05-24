@@ -7,6 +7,7 @@
 //
 
 #import "PX8tracksAccess.h"
+#import "PX8tracksResults.h"
 
 @interface PX8tracksAccess()
 @property (nonatomic, retain, readwrite) NSString *apiKey;
