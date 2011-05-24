@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class PX8tracksResults;
+@class PX8tracksUser;
 
 @interface PX8tracksAccess : NSObject {
 @private
@@ -26,5 +27,6 @@
 
 -(PX8tracksResults *)mixes;
 -(PX8tracksResults *)search:(NSString *)searchString;
+-(PX8tracksResults *)mixesForUser:(PX8tracksUser *)user;
 
 @end
