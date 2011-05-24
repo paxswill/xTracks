@@ -3,7 +3,7 @@
 //  xTracks
 //
 //  Created by Will Ross on 5/23/11.
-//  Copyright 2011 Naval Research Lab. All rights reserved.
+//  Copyright 2011 Will Ross. All rights reserved.
 //
 
 #import "xTracksAppDelegate.h"

@@ -275,7 +275,7 @@
 		B1391CA5138B410200DAC9D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "Naval Research Lab";
+				ORGANIZATIONNAME = "Will Ross";
 			};
 			buildConfigurationList = B1391CA8138B410200DAC9D1 /* Build configuration list for PBXProject "xTracks" */;
 			compatibilityVersion = "Xcode 3.2";
