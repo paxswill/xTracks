@@ -12,6 +12,7 @@
 @interface PX8tracksAccess()
 @property (nonatomic, retain, readwrite) NSString *apiKey;
 @property (nonatomic, assign, readwrite) BOOL loggedIn;
+@property (nonatomic, retain, readwrite) PX8tracksUser *currentUser;
 @property (nonatomic, retain, readwrite) NSString *userToken;
 @property (nonatomic, retain, readwrite) NSString *playToken;
 @end
@@ -20,6 +21,7 @@
 
 @synthesize apiKey;
 @synthesize userName;
+@synthesize currentUser;
 @synthesize loggedIn;
 @synthesize userToken;
 @synthesize playToken;

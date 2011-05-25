@@ -15,12 +15,14 @@
 @private
     NSString *apiKey;
 	NSString *userName;
+	PX8tracksUser *currentUser;
 	BOOL loggedIn;
 	NSString *userToken;
 	NSString *playToken;
 }
 @property (nonatomic, retain, readonly) NSString *apiKey;
 @property (nonatomic, retain, readwrite) NSString *userName;
+@property (nonatomic, retain, readonly) PX8tracksUser *currentUser;
 @property (nonatomic, assign, readonly) BOOL loggedIn;
 @property (nonatomic, retain, readonly) NSString *userToken;
 @property (nonatomic, retain, readonly) NSString *playToken;
