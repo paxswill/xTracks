@@ -7,8 +7,10 @@
 //
 
 #import "PX8tracksMix.h"
+#import "PX8tracksTrack.h"
 
 @interface PX8tracksMix()
+@property (nonatomic, retain, readwrite) PX8tracksAccess *access;
 @property (nonatomic, retain, readwrite) NSString *name;
 @property (nonatomic, assign, readwrite) BOOL published;
 @property (nonatomic, retain, readwrite) NSURL *coverURL;
@@ -23,7 +25,7 @@
 @end
 
 @implementation PX8tracksMix
-
+@synthesize access;
 @synthesize name;
 @synthesize published;
 @synthesize coverURL;

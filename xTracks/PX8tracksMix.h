@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class PX8tracksAccess;
 @class PX8tracksUser;
 
 @interface PX8tracksMix : NSObject {
 @private
+	PX8tracksAccess *access;
     NSString *name;
 	BOOL published;
 	NSURL *coverURL;
@@ -24,6 +26,7 @@
 	NSDate *publishedDate;
 	NSURL *url;
 }
+@property (nonatomic, retain, readonly) PX8tracksAccess *access;
 @property (nonatomic, retain, readonly) NSString *name;
 @property (nonatomic, assign, readonly) BOOL published;
 @property (nonatomic, retain, readonly) NSURL *coverURL;
@@ -37,5 +40,7 @@
 @property (nonatomic, retain, readonly) NSURL *url;
 
 // Initializer From JSON
+
+-(NSArray *)tracksPlayed;
 
 @end
