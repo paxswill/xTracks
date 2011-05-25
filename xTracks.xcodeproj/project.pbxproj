@@ -35,6 +35,7 @@
 		B1391D1B138C811C00DAC9D1 /* PX8tracksPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D1A138C811C00DAC9D1 /* PX8tracksPlayer.m */; };
 		B1391D1E138C86B600DAC9D1 /* PX8tracksTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D1D138C86B600DAC9D1 /* PX8tracksTrack.m */; };
 		B1391D21138C8A9900DAC9D1 /* PX8tracksObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D20138C8A9900DAC9D1 /* PX8tracksObject.m */; };
+		B1F5D8BA138C9408003C6A52 /* apiKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1F5D8B9138C9408003C6A52 /* apiKey.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		B1391D1D138C86B600DAC9D1 /* PX8tracksTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksTrack.m; sourceTree = "<group>"; };
 		B1391D1F138C8A9900DAC9D1 /* PX8tracksObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PX8tracksObject.h; sourceTree = "<group>"; };
 		B1391D20138C8A9900DAC9D1 /* PX8tracksObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksObject.m; sourceTree = "<group>"; };
+		B1F5D8B9138C9408003C6A52 /* apiKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apiKey.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		B1391CB9138B410200DAC9D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1F5D8B9138C9408003C6A52 /* apiKey.txt */,
 				B1391CBA138B410200DAC9D1 /* xTracks-Info.plist */,
 				B1391CBB138B410200DAC9D1 /* InfoPlist.strings */,
 				B1391CBE138B410200DAC9D1 /* xTracks-Prefix.pch */,
@@ -338,6 +341,7 @@
 				B1391CBD138B410200DAC9D1 /* InfoPlist.strings in Resources */,
 				B1391CC3138B410200DAC9D1 /* Credits.rtf in Resources */,
 				B1391CC9138B410200DAC9D1 /* MainMenu.xib in Resources */,
+				B1F5D8BA138C9408003C6A52 /* apiKey.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +576,7 @@
 				B1391CE2138B410200DAC9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1391CE3138B410200DAC9D1 /* Build configuration list for PBXNativeTarget "xTracksTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +585,7 @@
 				B1391CE5138B410200DAC9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
