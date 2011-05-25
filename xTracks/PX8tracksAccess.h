@@ -14,20 +14,21 @@
 @interface PX8tracksAccess : NSObject {
 @private
     NSString *apiKey;
-	NSString *userName;
 	PX8tracksUser *currentUser;
 	BOOL loggedIn;
 	NSString *userToken;
 	NSString *playToken;
+	BOOL sslEverything;
 }
 @property (nonatomic, retain, readonly) NSString *apiKey;
-@property (nonatomic, retain, readwrite) NSString *userName;
 @property (nonatomic, retain, readonly) PX8tracksUser *currentUser;
 @property (nonatomic, assign, readonly) BOOL loggedIn;
 @property (nonatomic, retain, readonly) NSString *userToken;
 @property (nonatomic, retain, readonly) NSString *playToken;
 
 -(id)initWithAPIKey:(NSString *)key;
+
+-(BOOL)loginWithUsername:(NSString *)user password:(NSString *)password;
 
 -(PX8tracksResults *)mixes;
 -(PX8tracksResults *)search:(NSString *)searchString;

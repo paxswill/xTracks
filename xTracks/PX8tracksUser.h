@@ -23,9 +23,7 @@ typedef enum{
 	BOOL followed;
 	PX8tracksUserSetting openNewWindows;
 	PX8tracksUserSetting playNextMix;
-	NSString *neighborhood;
-	NSString *city;
-	NSString *country;
+	NSString *location;
 	NSURL *url;
 }
 @property (nonatomic, retain, readonly) NSString *name;
@@ -34,12 +32,10 @@ typedef enum{
 @property (nonatomic, assign, readwrite) BOOL followed;
 @property (nonatomic, assign, readonly) PX8tracksUserSetting openNewWindows;
 @property (nonatomic, assign, readonly) PX8tracksUserSetting playNextMix;
-@property (nonatomic, retain, readonly) NSString *neighborhood;
-@property (nonatomic, retain, readonly) NSString *city;
-@property (nonatomic, retain, readonly) NSString *country;
+@property (nonatomic, retain, readonly) NSString *location;
 @property (nonatomic, retain, readonly) NSURL *url;
 
-// Init from JSON
+-(id)initWithAccess:(PX8tracksAccess *)accessObject userDictionary:(NSDictionary *)json;
 
 -(NSArray *)userMixes;
 -(NSArray *)likedMixes;
