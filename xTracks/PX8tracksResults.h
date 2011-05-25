@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "PX8tracksObject.h"
 
+@class ASIFormDataRequest;
+
 typedef enum{
 	PX8tracksSortRecent,
 	PX8tracksSortPopular,
@@ -21,12 +23,14 @@ typedef enum{
 	NSUInteger totalCount;
 	NSUInteger perPage;
 	PX8tracksSortOption sort;
-	NSString *requestString;
+	ASIFormDataRequest *resultRequest;
 }
 @property (nonatomic, assign, readwrite) NSUInteger totalCount;
 @property (nonatomic, assign, readwrite) NSUInteger perPage;
 @property (nonatomic, assign, readwrite) PX8tracksSortOption sort;
-@property (nonatomic, retain, readonly) NSString *requestString;
+@property (nonatomic, retain, readonly) ASIFormDataRequest *resultRequest;
+
+-(id)initWithAccess:(PX8tracksAccess *)accessObject andRequest:(ASIFormDataRequest *)request;
 
 -(id)initWithRequestString:(NSString *)request withAccess:(PX8tracksAccess *)accessObject;
 -(NSArray *)getPage:(NSUInteger)pageNum;

@@ -8,29 +8,44 @@
 
 #import "PX8tracksResults.h"
 #import "PX8tracksAccess.h"
+#import "ASIFormDataRequest.h"
+#import "JSONKit.h"
 
 @interface PX8tracksResults()
-@property (nonatomic, retain, readwrite) NSString *requestString;
+@property (nonatomic, retain, readwrite) ASIFormDataRequest *resultRequest;
+-(NSDictionary *)requestItems:(NSUInteger)numItems page:(NSUInteger)pageNum;
 @end
 
 @implementation PX8tracksResults
 @synthesize totalCount;
 @synthesize perPage;
 @synthesize sort;
-@synthesize requestString;
+@synthesize resultRequest;
 
--(id)initWithRequestString:(NSString *)request withParent:(PX8tracksAccess *)accessObject{
+-(id)initWithAccess:(PX8tracksAccess *)accessObject andRequest:(ASIFormDataRequest *)request{
 	if((self = [super initWithAccess:accessObject])){
 		self.perPage = 10;
+		self.resultRequest = request;
 		self.sort = PX8tracksSortRecent;
-		self.requestString = request;
+		NSDictionary *results = [self requestItems:1 page:1];
+		self.totalCount = [[results objectForKey:@"total_entries"] unsignedIntegerValue];
 	}
 	return self;
 }
 
 - (void)dealloc{
-	self.requestString = nil;
+	self.resultRequest = nil;
     [super dealloc];
+}
+
+-(NSDictionary *)requestItems:(NSUInteger)numItems page:(NSUInteger)pageNum{
+	ASIFormDataRequest *thisRequest = [self.resultRequest copy];
+	[thisRequest setPostValue:[NSNumber numberWithUnsignedInteger:numItems] forKey:@"per_page"];
+	[thisRequest setPostValue:[NSNumber numberWithUnsignedInteger:pageNum] forKey:@"page"];
+	[thisRequest startSynchronous];
+	NSDictionary *results = [[thisRequest responseData] objectFromJSONData];
+	[thisRequest release];
+	return results;
 }
 
 -(NSArray *)getPage:(NSUInteger)pageNum{
