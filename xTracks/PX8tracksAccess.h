@@ -17,11 +17,13 @@
 	NSString *userName;
 	BOOL loggedIn;
 	NSString *userToken;
+	NSString *playToken;
 }
 @property (nonatomic, retain, readonly) NSString *apiKey;
 @property (nonatomic, retain, readwrite) NSString *userName;
 @property (nonatomic, assign, readonly) BOOL loggedIn;
 @property (nonatomic, retain, readonly) NSString *userToken;
+@property (nonatomic, retain, readonly) NSString *playToken;
 
 -(id)initWithAPIKey:(NSString *)key;
 
