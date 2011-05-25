@@ -13,7 +13,6 @@
 @property (nonatomic, retain, readwrite) NSString *name;
 @property (nonatomic, assign, readwrite) NSInteger userID;
 @property (nonatomic, retain, readwrite) NSURL *avatarURL;
-@property (nonatomic, assign, readwrite) BOOL followed;
 @property (nonatomic, assign, readwrite) PX8tracksUserSetting openNewWindows;
 @property (nonatomic, assign, readwrite) PX8tracksUserSetting playNextMix;
 @property (nonatomic, retain, readwrite) NSString *neighborhood;

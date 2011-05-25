@@ -14,7 +14,6 @@
 @property (nonatomic, assign, readwrite) BOOL published;
 @property (nonatomic, retain, readwrite) NSURL *coverURL;
 @property (nonatomic, assign, readwrite) NSInteger idNumber;
-@property (nonatomic, assign, readwrite) BOOL liked;
 @property (nonatomic, retain, readwrite) PX8tracksUser *user;
 @property (nonatomic, retain, readwrite) NSArray *tags;
 @property (nonatomic, assign, readwrite) NSUInteger playCount;
