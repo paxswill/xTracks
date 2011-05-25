@@ -28,7 +28,7 @@ typedef enum{
 @property (nonatomic, assign, readwrite) PX8tracksSortOption sort;
 @property (nonatomic, retain, readonly) NSString *requestString;
 
--(id)initWithRequestString:(NSString *)request withAccess:(PX8tracksAccess *)access;
+-(id)initWithRequestString:(NSString *)request withAccess:(PX8tracksAccess *)accessObject;
 -(NSArray *)getPage:(NSUInteger)pageNum;
 
 @end

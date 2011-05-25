@@ -19,9 +19,8 @@
 @synthesize sort;
 @synthesize requestString;
 
--(id)initWithRequestString:(NSString *)request withParent:(PX8tracksAccess *)access{
-	if((self = [super init])){
-		self.access = access;
+-(id)initWithRequestString:(NSString *)request withParent:(PX8tracksAccess *)accessObject{
+	if((self = [super initWithAccess:accessObject])){
 		self.perPage = 10;
 		self.sort = PX8tracksSortRecent;
 		self.requestString = request;
@@ -30,7 +29,6 @@
 }
 
 - (void)dealloc{
-	self.access = nil;
 	self.requestString = nil;
     [super dealloc];
 }
