@@ -12,18 +12,16 @@
 @implementation PX8tracksObject
 @synthesize access;
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
+-(id)initWithAccess:(PX8tracksAccess *)accessObject{
+	if((self = [super init])){
+		self.access = accessObject;
+	}
+	return self;
 }
 
 - (void)dealloc
 {
+	self.access = nil;
     [super dealloc];
 }
 
