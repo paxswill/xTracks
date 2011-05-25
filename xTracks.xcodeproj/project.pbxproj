@@ -32,6 +32,7 @@
 		B1391D12138B478A00DAC9D1 /* PX8tracksResults.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D11138B478A00DAC9D1 /* PX8tracksResults.m */; };
 		B1391D15138B4B5600DAC9D1 /* PX8tracksMix.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D14138B4B5600DAC9D1 /* PX8tracksMix.m */; };
 		B1391D18138B4DE100DAC9D1 /* PX8tracksUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D17138B4DE100DAC9D1 /* PX8tracksUser.m */; };
+		B1391D1B138C811C00DAC9D1 /* PX8tracksPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1391D1A138C811C00DAC9D1 /* PX8tracksPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		B1391D14138B4B5600DAC9D1 /* PX8tracksMix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksMix.m; sourceTree = "<group>"; };
 		B1391D16138B4DE100DAC9D1 /* PX8tracksUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PX8tracksUser.h; sourceTree = "<group>"; };
 		B1391D17138B4DE100DAC9D1 /* PX8tracksUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksUser.m; sourceTree = "<group>"; };
+		B1391D19138C811C00DAC9D1 /* PX8tracksPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PX8tracksPlayer.h; sourceTree = "<group>"; };
+		B1391D1A138C811C00DAC9D1 /* PX8tracksPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PX8tracksPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 			children = (
 				B1391CE9138B42D200DAC9D1 /* PX8tracksAccess.h */,
 				B1391CEA138B42D200DAC9D1 /* PX8tracksAccess.m */,
+				B1391D19138C811C00DAC9D1 /* PX8tracksPlayer.h */,
+				B1391D1A138C811C00DAC9D1 /* PX8tracksPlayer.m */,
 				B1391D13138B4B5600DAC9D1 /* PX8tracksMix.h */,
 				B1391D14138B4B5600DAC9D1 /* PX8tracksMix.m */,
 				B1391D16138B4DE100DAC9D1 /* PX8tracksUser.h */,
@@ -372,6 +377,7 @@
 				B1391D12138B478A00DAC9D1 /* PX8tracksResults.m in Sources */,
 				B1391D15138B4B5600DAC9D1 /* PX8tracksMix.m in Sources */,
 				B1391D18138B4DE100DAC9D1 /* PX8tracksUser.m in Sources */,
+				B1391D1B138C811C00DAC9D1 /* PX8tracksPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
