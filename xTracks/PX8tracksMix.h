@@ -37,7 +37,7 @@
 @property (nonatomic, retain, readonly) NSDate *publishedDate;
 @property (nonatomic, retain, readonly) NSURL *url;
 
-// Initializer From JSON
+-(id)initWithAccess:(PX8tracksAccess *)accessObject mixDictionary:(NSDictionary *)json;
 
 -(NSArray *)tracksPlayed;
 

@@ -8,6 +8,7 @@
 
 #import "PX8tracksMix.h"
 #import "PX8tracksTrack.h"
+#import "PX8tracksUser.h"
 
 @interface PX8tracksMix()
 @property (nonatomic, retain, readwrite) NSString *name;
@@ -35,18 +36,33 @@
 @synthesize publishedDate;
 @synthesize url;
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
+-(id)initWithAccess:(PX8tracksAccess *)accessObject mixDictionary:(NSDictionary *)json{
+	if((self = [super initWithAccess:accessObject])){
+		self.name = [json objectForKey:@"name"];
+		self.published = [[json objectForKey:@"published"] boolValue];
+		self.coverURL = [NSURL URLWithString:[[json objectForKey:@"cover_urls"] objectForKey:@"original"]];
+		self.idNumber = [[json objectForKey:@"id"] integerValue];
+		self.liked = [[json objectForKey:@"liked_by_current_user"] boolValue];
+		self.user = [[[PX8tracksUser alloc] initWithAccess:accessObject userDictionary:[json objectForKey:@"user"]] autorelease];
+		// Tags are not an array normally, we have to split them
+		NSString *tagString = [json objectForKey:@"tag_list_cache"];
+		self.tags = [tagString componentsSeparatedByString:@", "];
+		self.playCount = [[json objectForKey:@"plays_count"] integerValue];
+		self.mixDescription = [json objectForKey:@"description"];
+		self.publishedDate = [NSDate dateWithString:[json objectForKey:@"first_published_at"]];
+		self.url = [NSURL URLWithString:[json objectForKey:@"restful_url"]];
+	}
+	return self;
 }
 
-- (void)dealloc
-{
+- (void)dealloc{
+	self.name = nil;
+	self.coverURL = nil;
+	self.user = nil;
+	self.tags = nil;
+	self.mixDescription = nil;
+	self.publishedDate = nil;
+	self.url = nil;
     [super dealloc];
 }
 
