@@ -8,6 +8,7 @@
 
 #import "PX8tracksResults.h"
 #import "PX8tracksAccess.h"
+#import "PX8tracksMix.h"
 #import "ASIFormDataRequest.h"
 #import "JSONKit.h"
 
@@ -49,7 +50,14 @@
 }
 
 -(NSArray *)getPage:(NSUInteger)pageNum{
-	// TODO: implement
+	NSDictionary *pageResults = [[self requestItems:self.perPage page:pageNum] retain];
+	NSMutableArray *mixes = [[NSMutableArray alloc] initWithCapacity:self.perPage];
+	for(NSDictionary *mixInfo in [pageResults objectForKey:@"mixes"]){
+		PX8tracksMix *mix = [[PX8tracksMix alloc] initWithAccess:self.access mixDictionary:mixInfo];
+		[mixes addObject:mix];
+		[mix release];
+	}
+	return [mixes autorelease];
 }
 
 @end
