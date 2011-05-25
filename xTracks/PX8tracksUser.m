@@ -23,6 +23,17 @@
 
 @implementation PX8tracksUser
 
+@synthesize name;
+@synthesize userID;
+@synthesize avatarURL;
+@synthesize followed;
+@synthesize openNewWindows;
+@synthesize playNextMix;
+@synthesize neighborhood;
+@synthesize city;
+@synthesize country;
+@synthesize url;
+
 - (id)init
 {
     self = [super init];
