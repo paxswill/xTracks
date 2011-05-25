@@ -7,21 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PX8tracksObject.h"
 
-@class PX8tracksAccess;
 @class PX8tracksMix;
 @class PX8tracksTrack;
 
-@interface PX8tracksPlayer : NSObject {
+@interface PX8tracksPlayer : PX8tracksObject {
 @private
-	PX8tracksAccess *access;
 	PX8tracksMix *currentMix;
 	PX8tracksTrack *currentTrack;
     BOOL atStart;
 	BOOL atEnd;
 	BOOL canSkip;
 }
-@property (nonatomic, retain, readonly) PX8tracksAccess *access;
 @property (nonatomic, retain, readwrite) PX8tracksMix *currentMix;
 @property (nonatomic, retain, readonly) PX8tracksTrack *currentTrack;
 @property (nonatomic, assign, readonly, getter=atStart, setter=setAtStart:) BOOL atStart;

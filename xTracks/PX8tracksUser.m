@@ -7,6 +7,7 @@
 //
 
 #import "PX8tracksUser.h"
+#import "PX8tracksMix.h"
 
 @interface PX8tracksUser()
 @property (nonatomic, retain, readwrite) NSString *name;
@@ -19,6 +20,7 @@
 @property (nonatomic, retain, readwrite) NSString *city;
 @property (nonatomic, retain, readwrite) NSString *country;
 @property (nonatomic, retain, readwrite) NSURL *url;
+
 @end
 
 @implementation PX8tracksUser

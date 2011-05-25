@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class PX8tracksAccess;
+#import "PX8tracksObject.h"
 
 typedef enum{
 	PX8tracksSortRecent,
@@ -17,21 +16,19 @@ typedef enum{
 	PX8tracksSortRandom
 }PX8tracksSortOption;
 
-@interface PX8tracksResults : NSObject {
+@interface PX8tracksResults : PX8tracksObject {
 @private
-    PX8tracksAccess *parent;
 	NSUInteger totalCount;
 	NSUInteger perPage;
 	PX8tracksSortOption sort;
 	NSString *requestString;
 }
-@property (nonatomic, retain, readonly) PX8tracksAccess *parent;
 @property (nonatomic, assign, readwrite) NSUInteger totalCount;
 @property (nonatomic, assign, readwrite) NSUInteger perPage;
 @property (nonatomic, assign, readwrite) PX8tracksSortOption sort;
 @property (nonatomic, retain, readonly) NSString *requestString;
 
--(id)initWithRequestString:(NSString *)request withParent:(PX8tracksAccess *)access;
+-(id)initWithRequestString:(NSString *)request withAccess:(PX8tracksAccess *)access;
 -(NSArray *)getPage:(NSUInteger)pageNum;
 
 @end

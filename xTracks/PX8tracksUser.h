@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PX8tracksObject.h"
 
 typedef enum{
 	PX8tracksNeverSetting,
@@ -14,7 +15,7 @@ typedef enum{
 	PX8tracksAskSetting,
 } PX8tracksUserSetting;
 
-@interface PX8tracksUser : NSObject {
+@interface PX8tracksUser : PX8tracksObject {
 @private
     NSString *name;
 	NSInteger userID;
@@ -39,5 +40,8 @@ typedef enum{
 @property (nonatomic, retain, readonly) NSURL *url;
 
 // Init from JSON
+
+-(NSArray *)userMixes;
+-(NSArray *)likedMixes;
 
 @end

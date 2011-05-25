@@ -11,7 +11,6 @@
 #import "PX8tracksMix.h"
 
 @interface PX8tracksPlayer()
-@property (nonatomic, retain, readwrite) PX8tracksAccess *access;
 @property (nonatomic, retain, readwrite) PX8tracksTrack *currentTrack;
 @property (nonatomic, assign, readwrite, getter=atStart, setter=setAtStart:) BOOL atStart;
 @property (nonatomic, assign, readwrite, getter=atEnd, setter=setAtEnd:) BOOL atEnd;
@@ -19,7 +18,6 @@
 @end
 
 @implementation PX8tracksPlayer
-@synthesize access;
 @synthesize currentMix;
 @synthesize currentTrack;
 @synthesize atStart;

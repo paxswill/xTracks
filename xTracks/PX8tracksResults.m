@@ -10,13 +10,10 @@
 #import "PX8tracksAccess.h"
 
 @interface PX8tracksResults()
-@property (nonatomic, retain, readwrite) PX8tracksAccess *parent;
 @property (nonatomic, retain, readwrite) NSString *requestString;
 @end
 
 @implementation PX8tracksResults
-
-@synthesize parent;
 @synthesize totalCount;
 @synthesize perPage;
 @synthesize sort;
@@ -24,7 +21,7 @@
 
 -(id)initWithRequestString:(NSString *)request withParent:(PX8tracksAccess *)access{
 	if((self = [super init])){
-		self.parent = access;
+		self.access = access;
 		self.perPage = 10;
 		self.sort = PX8tracksSortRecent;
 		self.requestString = request;
@@ -33,7 +30,7 @@
 }
 
 - (void)dealloc{
-	self.parent = nil;
+	self.access = nil;
 	self.requestString = nil;
     [super dealloc];
 }
