@@ -10,39 +10,29 @@
 
 @class PX8tracksAccess;
 @class PX8tracksMix;
+@class PX8tracksTrack;
 
 @interface PX8tracksPlayer : NSObject {
 @private
 	PX8tracksAccess *access;
 	PX8tracksMix *currentMix;
+	PX8tracksTrack *currentTrack;
     BOOL atStart;
 	BOOL atEnd;
 	BOOL canSkip;
-	// Track Info
-	NSString *trackName;
-	NSString *trackArtist;
-	NSString *trackAlbum;
-	NSUInteger trackYear;
-	NSInteger trackID;
-	NSURL *trackURL;
 }
 @property (nonatomic, retain, readonly) PX8tracksAccess *access;
 @property (nonatomic, retain, readwrite) PX8tracksMix *currentMix;
+@property (nonatomic, retain, readonly) PX8tracksTrack *currentTrack;
 @property (nonatomic, assign, readonly, getter=atStart, setter=setAtStart:) BOOL atStart;
 @property (nonatomic, assign, readonly, getter=atEnd, setter=setAtEnd:) BOOL atEnd;
 @property (nonatomic, assign, readonly, getter=canSkip, setter=setCanSkip:) BOOL canSkip;
-// Current Track Properties
-@property (nonatomic, retain, readonly) NSString *trackName;
-@property (nonatomic, retain, readonly) NSString *trackArtist;
-@property (nonatomic, retain, readonly) NSString *trackAlbum;
-@property (nonatomic, assign, readonly) NSUInteger trackYear;
-@property (nonatomic, assign, readonly) NSInteger trackID;
-@property (nonatomic, retain, readonly) NSURL *trackURL;
 
 -(id)initWithAccess:(PX8tracksAccess *)access;
 
 -(void)nextSong;
 -(void)skipSong;
 
+-(PX8tracksMix *)nextMix;
 
 @end
